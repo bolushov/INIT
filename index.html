@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Университет</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #3498db; /* Синий цвет */
+        }
+
+        header {
+            background-color: #34495e; /* Серый цвет */
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #logo {
+            max-width: 80px;
+            height: auto;
+        }
+
+        #university-info {
+            text-align: center;
+        }
+
+        #university-info h1 {
+            margin: 0;
+            font-size: 18px;
+            color: #fff; /* Белый цвет */
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        .search {
+            display: flex;
+            align-items: center;
+        }
+
+        .search input[type="text"] {
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .register-icon {
+            font-size: 24px;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+
+        /* Стили для разделов контента */
+        main {
+            padding: 80px 20px 20px; /* Отступ сверху, чтобы контент не перекрывался шапкой */
+        }
+
+        section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Стили для слайдера */
+        .slider-container {
+            width: 100%;
+            margin: 20px auto;
+        }
+
+        .slider img {
+            width: 100%;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .social-icons {
+            display: flex;
+            align-items: center;
+        }
+
+        .social-icons a {
+            color: #fff;
+            margin-right: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div id="university-info">
+            <img id="logo" src="image/cropped-66213eab-248f-446d-a0cc-df487f41635d.png" alt="Логотип университета">
+            <h1 style="color: #fff;">Институт новых информационных технологий</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Программы</a></li>
+                <li><a href="#">Обучение</a></li>
+                <li><a href="#">Поступления</a></li>
+                <li><a href="#">О нас</a></li>
+            </ul>
+        </nav>
+
+        <div class="search">
+            <input type="text" placeholder="Поиск...">
+            <i class="fas fa-search"></i>
+        </div>
+
+        <div class="social-icons">
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-telegram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+        </div>
+
+        <i class="fas fa-user-circle register-icon"></i>
+    </header>
+
+    <!-- Слайдер после шапки -->
+    <div class="slider-container">
+        <div class="slider">
+            <a href="#"><img src="image/int.jpg" alt="Изображение 1"></a>
+            <a href="#"><img src="image/programmer-8277836_960_720.webp" alt="Изображение 2"></a>
+            <a href="#"><img src="slider3.jpg" alt="Изображение 3"></a>
+            <a href="#"><img src="slider4.jpg" alt="Изображение 4"></a>
+        </div>
+    </div>
+
+    <!-- Контент сайта -->
+    <main>
+        <section>
+            <h2>Приветственный текст</h2>
+            <p>Добро пожаловать на сайт Института новых информационных технологий!</p>
+        </section>
+
+        <!-- Добавьте больше разделов по мере необходимости -->
+
+    </main>
+
+    <!-- Подключение библиотеки для слайдера -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        // Инициализация слайдера
+        $(document).ready(function(){
+            $('.slider').slick({
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 2000
+            });
+        });
+    </script>
+
+</body>
+</html>
